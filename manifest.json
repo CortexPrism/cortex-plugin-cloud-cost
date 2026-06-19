@@ -1,0 +1,38 @@
+{
+  "name": "cortex-plugin-cloud-cost",
+  "version": "1.0.0",
+  "description": "Cloud Cost Anomaly Detector — Monitor AWS/GCP/Azure costs for spikes, correlate with deployments, and suggest remediation",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-cloud-cost",
+  "homepage": "https://cortexprism.io/marketplace/plugins/cloud-cost",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "cloudcost_detect_anomalies",
+      "description": "Detect cost anomalies across cloud providers",
+      "params": []
+    },
+    {
+      "name": "cloudcost_get_breakdown",
+      "description": "Get cost breakdown by service",
+      "params": []
+    },
+    {
+      "name": "cloudcost_set_budget",
+      "description": "Set budget alerts and thresholds",
+      "params": []
+    },
+    {
+      "name": "cloudcost_optimize",
+      "description": "Get cost optimization recommendations",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
